@@ -24,8 +24,9 @@ pip install -r requirements.txt
 
 TODO: Upload data and checkpoints
 Download data/models:
- - <a href="https://tomho.sk/hiro/data/data_space.zip" download>Space</a>
- - <a href="https://tomho.sk/hiro/data/data_amasum.zip" download>AmaSum</a>
+ - <a href="https://tomho.sk/hiro/data/hiro_data_shared.zip" download>Shared (tokenizers etc)</a> -> `./data`
+ - <a href="https://tomho.sk/hiro/data/hiro_data_space.zip" download>Space</a> -> `./data`
+ - <a href="https://tomho.sk/hiro/data/hiro_data_amasum.zip" download>AmaSum</a> -> `./data`
  - [Trained checkpoints](http://tomho.sk/hiro/models/) -> `./models`
 
 Tested with Python 3.9.

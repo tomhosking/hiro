@@ -1,0 +1,7 @@
+dataset,model,accuracy,coherent,concise,detail,overall
+amasum-combined,hero_extractive_test,-73.3,-33.300000000000004,-3.3000000000000003,-86.7,-73.3
+amasum-combined,hero_oneshot_test_mistral7b,50.0,80.0,56.699999999999996,16.7,73.3
+amasum-combined,hero_piecewise_test_mistral7b,23.3,-46.7,-53.300000000000004,70.0,0.0
+space,hero_extractive_test,-48.4,-12.9,0.0,-80.60000000000001,-28.999999999999996
+space,hero_oneshot_test_mistral7b,45.2,48.4,54.800000000000004,22.6,61.3
+space,hero_piecewise_test_mistral7b,3.3000000000000003,-36.7,-56.699999999999996,60.0,-33.300000000000004
