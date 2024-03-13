@@ -22,24 +22,20 @@ Then install dependencies:
 pip install -r requirements.txt
 ```
 
-TODO: Upload data and checkpoints
 Download data/models:
- - <a href="https://tomho.sk/hiro/data/hiro_data_shared.zip" download>Shared (tokenizers etc)</a> -> `./data`
  - <a href="https://tomho.sk/hiro/data/hiro_data_space.zip" download>Space</a> -> `./data`
  - <a href="https://tomho.sk/hiro/data/hiro_data_amasum.zip" download>AmaSum</a> -> `./data`
  - [Trained checkpoints](http://tomho.sk/hiro/models/) -> `./models`
 
 Tested with Python 3.9.
 
-## Generating Summaries
+## Generating Summaries for Space/Amasum
 
 First, run the pre-processing eval recipe:
 
 ```sh
 torchseq-eval --recipe opagg.hiro_pre --model ./models/20240130_183901_d671_space --test
 ```
-
-TODO: Which files does this read/write?
 
 Then, get generations from your preferred LLM (we used Mistral 7B Instruct v0.2), based on the prompts in the files `eval/llm_inputs_piecewise_test.jsonl` and  `eval/llm_inputs_oneshot_test.jsonl`. You might want to use my [TGI Client](https://github.com/tomhosking/tgi-client) to run efficient batched inference through a HuggingFace model:
 ```sh
@@ -52,6 +48,8 @@ Then run the post-LLM eval recipe to get the scores:
 ```sh
 torchseq-eval --recipe opagg.hiro_post --model ./models/20240130_183901_d671_space --test
 ```
+
+TODO: How to generate summaries for other datasets
 
 ## Training on Space/Amasum
 
