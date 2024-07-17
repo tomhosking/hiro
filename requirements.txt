@@ -1,1 +1,1 @@
-git+https://github.com/tomhosking/torchseq.git@v3.1.0
+git+https://github.com/tomhosking/torchseq.git@27c933f81dcfb9d43d79e7cf18b5d3c0865a383f
